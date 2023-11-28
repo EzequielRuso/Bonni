@@ -336,14 +336,14 @@ process.env['NODE_TLS_REJECT_UNAUTHORIZED'] = '1'
  conn.ev.off('creds.update', conn.credsUpdate) 
  } 
   
- conn.welcome = '*[ NUEVO MIEMBRO ]\n\nUn gusto conocerte amig@ 🤗\n\n_Recuerda leer las reglas del grupo para no tener ningun problema 🧐_\n\n*Solo disfrutar de este grupo y divertite 🥳*' 
- conn.bye = '*• Gracias por haber sido parte del grupo*\n*━━━━━━━━━━━━━━━━━━━━━━━━━*\n\n🍧 *• Nombre:* @user\n🗓️ *• Fecha:* @date\n⏰ *• Hora:* @time' 
- conn.spromote = '⚠️ *@user SE SUMA AL GRUPO DE ADMINS*' 
- conn.sdemote = '⚠️ *@user ABANDONA EL GRUPO DE ADMINS*' 
- conn.sDesc = '⚠️ *SE HA MODIFICADO LA DESCRIPCIÓN*\n\n*NUEVA DESCRIPCIÓN:* @desc' 
- conn.sSubject = '⚠️ *SE HA MODIFICADO EL TÍTULO DEL GRUPO*\n*NUEVO TITULO:* @subject' 
- conn.sIcon = '⚠️ *SE HA CAMBIADO LA FOTO DEL GRUPO*' 
- conn.sRevoke = '⚠️ *SE HA ACTUALIZADO EL ENLACE DEL GRUPO!!*\n*NUEVO ENLACE:* @revoke' 
+ conn.welcome = //'*[ NUEVO MIEMBRO ]\n\nUn gusto conocerte amig@ 🤗\n\n_Recuerda leer las reglas del grupo para no tener ningun problema 🧐_\n\n*Solo disfrutar de este grupo y divertite 🥳*' 
+ conn.bye = //'*• Gracias por haber sido parte del grupo*\n*━━━━━━━━━━━━━━━━━━━━━━━━━*\n\n🍧 *• Nombre:* @user\n🗓️ *• Fecha:* @date\n⏰ *• Hora:* @time' 
+ conn.spromote = //'⚠️ *@user SE SUMA AL GRUPO DE ADMINS*' 
+ conn.sdemote = //'⚠️ *@user ABANDONA EL GRUPO DE ADMINS*' 
+ conn.sDesc = //'⚠️ *SE HA MODIFICADO LA DESCRIPCIÓN*\n\n*NUEVA DESCRIPCIÓN:* @desc' 
+ conn.sSubject = //'⚠️ *SE HA MODIFICADO EL TÍTULO DEL GRUPO*\n*NUEVO TITULO:* @subject' 
+ conn.sIcon = //'⚠️ *SE HA CAMBIADO LA FOTO DEL GRUPO*' 
+ conn.sRevoke = //'⚠️ *SE HA ACTUALIZADO EL ENLACE DEL GRUPO!!*\n*NUEVO ENLACE:* @revoke' 
   
   
  conn.handler = handler.handler.bind(global.conn) 

@@ -560,15 +560,15 @@ import { generateWAMessageFromContent } from "@whiskeysockets/baileys"
  global.dfail = (type, m, conn) => { 
   
  let msg = { 
- rowner: '⚠️️ *ESTE COMANDO SOLO MI DESAROLLADOR LO PUEDE USAR*', 
- owner: '⚠️ *ESTE COMANDO SOLO MI PROPIETARIO LO PUEDE USAR*', 
+ rowner: '*[🛑] Este comandos solo mi creador lo puede usar*', 
+ owner: '*[🛑] estr comando solo puede ser usado por mi owner*', 
  mods: '⚠️ *ESTA FUNCIÓN SOLO ES PARA MIS MODERADORES*', 
- premium: '⚠️ *ESTA FUNCIÓN SOLO ES PARA USUARIOS PREMIUM*', 
- group: '⚠️ *LA FUNCIÓN SOLO PUEDE SER EJECUTADA EN GRUPOS*', 
- private: '⚠️ *ESTA FUNCION SOLO PUEDE SER USADA EN EL CHAT PRIVADO*', 
- admin: '⚠️️ *ESTE COMANDO SOLO PUEDE SER USADO POR ADMINS*', 
- botAdmin: '⚠️️ *PARA USAR ESTA FUNCIÓN DEBO SER ADMIN*', 
- unreg: '⚠️ *REGÍSTRESE PARA USAR ESTA FUNCIÓN ESCRIBIENDO:*\n\n• */reg nombre.edad*\n\n*_❕ Ejemplo_* : */reg Ax.25*', 
+ premium: '*[🛑] ESTA FUNCIÓN SOLO ES PARA USUARIOS PREMIUM*', 
+ group: '*[🛑] LA FUNCIÓN SOLO PUEDE SER EJECUTADA EN GRUPOS*', 
+ private: '*[🛑] ESTA FUNCION SOLO PUEDE SER USADA EN EL CHAT PRIVADO*', 
+ admin: '*[🛑] Este comando solo esta permitido para admins del grupo*', 
+ botAdmin: '*[🛑] Para realizar esta función es necesario que sea admin*', 
+ unreg: '*[🛑] Alto es necesario que te registres primero:*\n\n• */reg nombre.edad*\n\n*_❕ Ejemplo_* : */reg jesus.17*', 
  restrict: '⚠️ *ESTA CARACTERÍSTICA ESTA DESACTIVADA*' 
  }[type] 
  if (msg) return conn.reply(m.chat, msg, m, { contextInfo:{ externalAdReply: {title: '👋 Hola!!', body: saludo, sourceUrl: global.channel, thumbnail: imagen2 }}}) 

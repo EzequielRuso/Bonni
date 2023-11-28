@@ -15,13 +15,13 @@ import fetch from 'node-fetch'
  additionalText = 'AUDIO' 
  } else if (command === 'play2') { 
  additionalText = 'VIDEO'} 
- let texto1 = `*∘ 📩 DESCARGANDO* 
+ let texto1 = `*descargando audio 🚀* 
  ${yt_play[0].title} 
   
- *∘ ⏰ DURACIÓN*  
+ *Duración de la musica ⏲️*  
  ${secondString(yt_play[0].duration.seconds)} 
   
- *∘ 👤 AUTOR* 
+ *∘Autor de la musica 🎧* 
  ${yt_play[0].author.name} 
  
  *enviando ${additionalText}, espere un momento soy algo lento...🐢*`.trim() 

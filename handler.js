@@ -76,7 +76,7 @@ import { generateWAMessageFromContent } from "@whiskeysockets/baileys"
  if (!('role' in user)) 
  user.role = 'Novato' 
  if (!('autolevelup' in user)) 
- user.autolevelup = true 
+ user.autolevelup = false 
  if (!('simi' in user)) 
  user.simi = false 
  } else 
@@ -95,7 +95,7 @@ import { generateWAMessageFromContent } from "@whiskeysockets/baileys"
   warn: 0, 
  level: 0, 
  role: 'Novato', 
- autolevelup: true, 
+ autolevelup: false, 
  simi: false, 
  } 
   
@@ -110,7 +110,7 @@ import { generateWAMessageFromContent } from "@whiskeysockets/baileys"
  if (!('detect' in chat)) 
  chat.detect = true 
  if (!('detect2' in chat)) 
- chat.detect2 = true 
+ chat.detect2 = false 
  if (!('sWelcome' in chat)) 
  chat.sWelcome = '' 
  if (!('sBye' in chat)) 
@@ -128,7 +128,7 @@ import { generateWAMessageFromContent } from "@whiskeysockets/baileys"
  if (!('antiToxic' in chat))  
  chat.antiToxic = true 
  if (!('viewonce' in chat)) 
- chat.viewonce = true 
+ chat.viewonce = false 
  if (!('onlyLatinos' in chat)) 
  chat.onlyLatinos = false 
  if (!('modoadmin' in chat)) chat.modoadmin = false    
@@ -142,7 +142,7 @@ import { generateWAMessageFromContent } from "@whiskeysockets/baileys"
  isBanned: false, 
  welcome: true, 
  detect: true, 
- detect2: true,  
+ detect2: false,  
  sWelcome: '', 
  sBye: '', 
  sPromote: '', 
@@ -150,8 +150,8 @@ import { generateWAMessageFromContent } from "@whiskeysockets/baileys"
  delete: true, 
  antiTraba: true, 
  antiToxic: false, 
- antiLink: true, 
- viewonce: true, 
+ antiLink: false, 
+ viewonce: false, 
  useDocument: false, 
  onlyLatinos: false, 
  modoadmin: false, 

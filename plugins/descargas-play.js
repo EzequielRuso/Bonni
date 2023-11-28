@@ -23,14 +23,8 @@ import fetch from 'node-fetch'
   
  *∘ 👤 AUTOR* 
  ${yt_play[0].author.name} 
-  
- *∘ 📍 CANAL* 
- ${yt_play[0].author.url} 
-  
- *∘ 📎 LINK* 
- ${yt_play[0].url} 
-  
- *⌚ ENVIANDO ${additionalText}, POR FAVOR ESPERE.*`.trim() 
+ 
+ *enviando ${additionalText}, espere un momento soy algo lento...🐢*`.trim() 
  await conn.sendMessage(m.chat, { 
  text: texto1, 
  contextInfo: { 

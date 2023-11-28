@@ -12,12 +12,10 @@ import { watchFile, unwatchFile } from 'fs'
  const __dirname = global.__dirname(import.meta.url) 
   
  global.owner =
-[['51907913096', '🍧𝙹𝚇𝚃𝚇𝙽 𝚃𝙱🍧', true],
-['522212009202', '💖dali💖', true],
-['51906528530'], '🦂 𝘼𝙡𝙖𝙘𝙧𝙖𝙣 🦂', true],
-['522212009202'],
-['522212009202'],
-['522212009202']],
+[['51929972576', '🍧𝙹𝚇𝚃𝚇𝙽 𝚃𝙱🍧', true],
+['50558124470', '💖𝙴𝙽𝙳𝙴𝚁 𝙻𝙱💖', true], ['5217294888993'],
+['573106040746'],
+['524531287294'],['524437863111']],
 
 //BETA: Si quiere evitar escribir el número que será bot en la consola, agregué desde aquí entonces: 
  //Sólo aplica para opción 2 (ser bot con código de texto de 8 digitos) 

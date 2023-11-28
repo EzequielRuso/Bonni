@@ -24,6 +24,8 @@ import fetch from 'node-fetch'
  *∘Autor de la musica 🎧* 
  ${yt_play[0].author.name} 
  
+ 01:06 ━━━━⬤─────── 04:05
+ 
  *enviando ${additionalText}, espere un momento soy algo lento...🐢*`.trim() 
  await conn.sendMessage(m.chat, { 
  text: texto1, 
